@@ -1,0 +1,75 @@
+`include "piso.v"
+
+module tb;
+
+reg        clk;
+reg        rst;
+reg        load;
+reg        en;
+reg  [3:0] p_in;
+wire       s_out;
+
+// DUT
+piso dut (
+    .clk   (clk),
+    .rst   (rst),
+    .load  (load),
+    .en    (en),
+    .p_in  (p_in),
+    .s_out (s_out)
+);
+
+// Clock generation
+initial begin
+    clk = 0;
+
+    repeat(30) begin
+        #5 clk = ~clk;
+    end
+end
+
+initial begin
+
+    $monitor("Time=%0t | clk=%b | rst=%b | load=%b | en=%b | p_in=%b | q=%b | s_out=%b",
+             $time, clk, rst, load, en, p_in, dut.q, s_out);
+
+    
+    // INITIAL VALUES
+    
+    rst  = 1;
+    load = 0;
+    en   = 0;
+    p_in = 4'b0000;
+
+    #10;
+
+  
+    rst = 0;
+
+   
+    repeat(5) begin
+
+            p_in = $random;
+
+      
+        load = 1;
+        en   = 0;
+
+        #10;
+
+               load = 0;
+        en   = 1;
+
+               #40;
+
+                en = 0;
+
+        #10;
+
+    end
+
+    
+
+end
+
+endmodule

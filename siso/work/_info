@@ -1,0 +1,61 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/balar_ku1rb7l/OneDrive/Documents/Quality_throught/Verilog/sequential/Shift_register/siso
+T_opt
+!s110 1788766896
+VYTfWbI9LFJ;B:I<6I@FXJ3
+04 2 4 work tb fast 0
+=1-38d57a30ae5d-6a9e6ab0-1d1-1294
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+vsiso
+Z2 !s110 1788766893
+!i10b 1
+!s100 ]3O6Wk1BQQk7LRLAMPO2m3
+I1RAaHmHj=7LU>?>OJFCXG1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1788766376
+8siso.v
+Fsiso.v
+L0 1
+Z4 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z5 !s108 1788766893.000000
+Z6 !s107 siso.v|siso_tb.v|
+Z7 !s90 -reportprogress|300|siso_tb.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb
+R2
+!i10b 1
+!s100 ]QEC4]K[=h`B@1X7nHmfL3
+IEhWAhoiaFWRDNoKLbGP>X1
+R3
+R0
+w1788766889
+8siso_tb.v
+Fsiso_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
